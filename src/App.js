@@ -4,6 +4,8 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import Message from "./components/message/message"
+// import Profile from "./components/profile.js/Profile"
 
 class App extends React.Component {
   render() {
@@ -21,9 +23,20 @@ class App extends React.Component {
           />
           <Route
             exact
+            path="/message"
+            component={Message}
+          />
+          <Route
+            exact
+            path="/profile"
+            component={Profile}
+          />
+          <Route
+            exact
             path="*"
             component={NotFound}
           />
+          
       </Switch>
     );
   }

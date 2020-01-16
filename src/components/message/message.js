@@ -1,18 +1,18 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { userIsNotAuthenticated } from "../HOCs";
+import { userIsNotAuthenticated } from "../../HOCs";
 
 class Message extends React.Component {
-    constructor(props) {
-      super(props);
-  
-      this.state = {
-        
-      };
-    }
-}
+  constructor(props) {
+    super(props);
 
-render(); { }
+    this.state = {
+
+    };
+  }
+
+
+  render() {
     return (
       <div>
         <div>
@@ -26,8 +26,10 @@ render(); { }
         </div>
       </div>
     );
-  
-    
+  }
+
+}
 
 
-      export default userIsNotAuthenticated (Home);
+
+export default Message;

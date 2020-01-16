@@ -15,9 +15,9 @@ class Menu extends React.Component {
         <h1>Kwitter</h1>
         {this.props.isAuthenticated && (
           <div id="menu-links">
-            {/* <Link to="/messagefeed">Message Feed</Link> */}
+            <Link to="/message">Message</Link>
             {/* temp fo profile */}
-            {/* <Link to="/profile">Profile</Link> */}
+            <Link to="/profile">Profile</Link>
             {/* temp for registration */}
             {/* <Link to="/registration">Registration</Link> */}
             {/* temp for message */}

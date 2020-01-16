@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { userIsNotAuthenticated } from "../HOCs";
+import { userIsNotAuthenticated } from "../../HOCs";
 class Profile extends Component {
     constructor(props) {
         super(props);
@@ -28,4 +28,4 @@ class Profile extends Component {
 
 
 
-export default userIsNotAuthenticated(Profile);
+export default Profile;

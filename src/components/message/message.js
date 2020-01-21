@@ -1,6 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import { userIsNotAuthenticated } from "../../HOCs";
+import DisplayName from '../displayName'
 import BlueService from '../../blueService';
 
 class Message extends React.Component {
@@ -26,6 +25,7 @@ class Message extends React.Component {
     }
 
     render() {
+        <DisplayName />
         if (this.state.data.message) {
             return (
                 <div>
@@ -46,20 +46,6 @@ class Message extends React.Component {
                     
                 </div>
             )}
-
-        // return (
-        //     <div>
-        //         <div>
-        //             Name: {}
-        //         </div>
-        //         <div>
-        //             content: {}
-        //         </div>
-        //         <div>
-        //             date: {}
-        //         </div>
-        //     </div>
-        // );
     }
 
 }

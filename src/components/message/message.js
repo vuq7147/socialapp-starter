@@ -25,7 +25,6 @@ class Message extends React.Component {
     }
 
     render() {
-        <DisplayName />
         if (this.state.data.message) {
             return (
                 <div>
@@ -43,7 +42,7 @@ class Message extends React.Component {
         else {
             return (
                 <div>
-                    
+                    <DisplayName/>
                 </div>
             )}
     }
